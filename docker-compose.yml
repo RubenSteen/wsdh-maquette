@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  node.test:
+    build:
+      context: ./docker/19
+      dockerfile: Dockerfile
+      args:
+        WWWGROUP: "${WWWGROUP}"
+    image: node-19/app
+    ports:
+      - "${APP_PORT:-80}:3000"
+    environment:
+      WWWUSER: "${WWWUSER}"
+      GITUSER: "${GITUSER}"
+      GITEMAIL: "${GITEMAIL}"
+    volumes:
+      - ".:/var/www/html"
+    networks:
+      - node
+networks:
+  node:
+    driver: bridge

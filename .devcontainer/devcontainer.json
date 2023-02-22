@@ -1,0 +1,14 @@
+// https://aka.ms/devcontainer.json
+{
+  "name": "WSDH Maquette",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "node.test",
+  "workspaceFolder": "/var/www/html",
+  "settings": {},
+  "extensions": [],
+  "remoteUser": "node",
+  // "forwardPorts": [],
+  // "runServices": [],
+  "postCreateCommand": "~/run-git-config",
+  // "shutdownAction": "none",
+}

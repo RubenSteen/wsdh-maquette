@@ -1,0 +1,7 @@
+if [ ! -z "$GITUSER" ]; then
+    git config --global user.name $GITUSER
+fi
+
+if [ ! -z "$GITEMAIL" ]; then
+    git config --global user.email $GITEMAIL
+fi
