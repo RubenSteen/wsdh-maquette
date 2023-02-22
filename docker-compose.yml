@@ -3,7 +3,7 @@ version: "3"
 services:
   node.test:
     build:
-      context: ./docker/19
+      context: ./docker/node-19
       dockerfile: Dockerfile
       args:
         WWWGROUP: "${WWWGROUP}"

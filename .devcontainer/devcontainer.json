@@ -4,11 +4,11 @@
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "node.test",
   "workspaceFolder": "/var/www/html",
-  "settings": {},
-  "extensions": [],
+  // "settings": {},
+  // "extensions": [],
   "remoteUser": "node",
   // "forwardPorts": [],
   // "runServices": [],
-  "postCreateCommand": "~/run-git-config",
+  "postCreateCommand": "~/run-git-config"
   // "shutdownAction": "none",
 }
