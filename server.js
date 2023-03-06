@@ -5,6 +5,8 @@ const host = '0.0.0.0';
 const port = 3000;
 const app = express();
 
+const Phidget = require('./phidget.js')
+
 const phidgetServerDisable = process.env.PHIDGET_SERVER_DISABLE || false;
 const phidgetServerIP = process.env.PHIDGET_SERVER_IP || "localhost";
 const phidgetServerPort = process.env.PHIDGET_SERVER_PORT || 5661;
