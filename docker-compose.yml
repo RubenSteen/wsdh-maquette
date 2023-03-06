@@ -19,6 +19,8 @@ services:
       - ".:/var/www/html"
     networks:
       - node
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 networks:
   node:
     driver: bridge
